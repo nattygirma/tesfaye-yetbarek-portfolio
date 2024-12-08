@@ -7,7 +7,7 @@ const Footer = (props) => {
   return (
     <footer style={bgStyle} className="mt-auto py-5 text-center ">
       <Container>
-        contact me @tofu@gmail.com
+        contact me tessbel77@gmail.com
       </Container>
     </footer>
   );
