@@ -55,14 +55,24 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
       </div>
  
 
-      <div className="container row">
-        <div className="col-7 d-none d-lg-block align-self-center">
+      <div className="container row d-none ">
+        <div className={`col-7 col-lg-${showPic ? "7" : "12"}  d-lg-block align-self-center`}>
         
-          <p className="lead text-center mb-5 mt-5">I believe that leadership is about fostering growth, collaboration, and inclusivity within teams. Drawing on Peter Senge’s principles of "team learning," I prioritize creating an environment where diverse perspectives are valued, and team members feel empowered to contribute. In one project, I resolved conflicts by encouraging open communication and aligning individual goals with a shared vision, which led to improved collaboration and successful project outcomes. My leadership philosophy emphasizes empathy, adaptability, and a commitment to mutual success.</p>
+          <p className="lead text-center mb-5 mt-5"></p>
         </div>
         <div className={`col-lg-${showPic ? "5" : "12"} align-self-center`}>
           
         <h2 className="display-5 mb-5  lead text-center">Leadership Philosophy</h2>
+        </div>
+      </div>
+      <div className="container row">
+        <div className="col-5 d-none d-lg-block align-self-center">
+
+        </div>
+        <div className={`col-lg-12`}>
+          <h2 className="display-4 mb-5 mt-5 text-center">Leadership Philosophy</h2>
+          <p className="lead text-cente">I believe that leadership is about fostering growth, collaboration, and inclusivity within teams. Drawing on Peter Senge’s principles of "team learning," I prioritize creating an environment where diverse perspectives are valued, and team members feel empowered to contribute. In one project, I resolved conflicts by encouraging open communication and aligning individual goals with a shared vision, which led to improved collaboration and successful project outcomes. My leadership philosophy emphasizes empathy, adaptability, and a commitment to mutual success.</p>
+
         </div>
       </div>
 
