@@ -5,6 +5,7 @@ import Navbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import { mainBody, repos, about, skills } from "../editable-stuff/config.js";
 import { NavLink } from "./home/migration";
+import tofu from "../editable-stuff/tofu.pdf"
 
 const Navigation = React.forwardRef((props, ref) => {
   // const { showBlog, FirstName } = config;
@@ -38,7 +39,7 @@ const Navigation = React.forwardRef((props, ref) => {
         }`}
       expand="lg"
     >
-      <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/#home"}>
+      <Navbar.Brand className="navbar-brand" href={process.env.PUBLIC_URL + "/"}>
         {`<${mainBody.firstName} />`}
       </Navbar.Brand>
       <Navbar.Toggle aria-controls="basic-navbar-nav" className="toggler" />
@@ -57,6 +58,14 @@ const Navigation = React.forwardRef((props, ref) => {
               Projects
             </NavLink>
           )}
+          <NavLink
+            className="nav-item lead"
+            href={tofu}
+            target="_blank"
+            rel="noreferrer noopener"
+          >
+            Resume
+          </NavLink>
           {about.show && (
             <NavLink
               className="nav-item lead"
