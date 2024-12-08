@@ -19,7 +19,6 @@ import Skills from "./components/home/Skills";
 // import { Blog } from "./components/blog/Blog";
 // import BlogPost from "./components/blog/BlogPost";
 import GetInTouch from "./components/home/GetInTouch.jsx";
-import Leadership from "./components/home/Leadership.jsx";
 
 import Experience from "./components/home/Experience";
 
@@ -72,8 +71,7 @@ const App = () => {
   const titleRef = React.useRef();
 
   return (
-    <BrowserRouter basename="/home"
-    // {process.env.PUBLIC_URL + "/"}
+    <BrowserRouter basename={process.env.PUBLIC_URL + "/"}
     >
       {navBar.show && <Navbar ref={titleRef} />}
       <Routes>
