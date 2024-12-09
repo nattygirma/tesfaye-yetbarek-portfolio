@@ -75,6 +75,23 @@ const AboutMe = ({ heading, message, link, imgSize, resume }) => {
 
         </div>
       </div>
+      <div className="container row">
+        <div className="col-5 d-none d-lg-block align-self-center">
+
+        </div>
+        <div className={`col-lg-12`}>
+          <h2 className="display-4 mb-5 text-center"> Career Strategy</h2>
+          <p className="lead text-cente">My career strategy is built on the foundation of continuous learning, adaptability, and practical experience:
+          </p>
+          <h3 className="display-8 mb-2">Short-term Goals</h3>
+          <p className="lead text-cente">Complete certifications like Lean Six Sigma and ITIL to enhance process improvement and management skills.
+          Participate in workshops and seminars on emerging technologies to stay current.</p>
+          <h3 className="display-8 mb-2 ">Long-term Goals</h3>
+          <p className="lead text-cente">Transition into an IT manager role where I can lead diverse teams and integrate innovative technologies.
+          Develop expertise in systems thinking to manage complexity and drive sustainable growth.</p>
+
+        </div>
+      </div>
 
       <div className="container row">
         <div className="col-5 d-none d-lg-block align-self-center">
